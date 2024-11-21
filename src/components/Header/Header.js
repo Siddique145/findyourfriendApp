@@ -1,5 +1,5 @@
 import { auth, signOut } from "../../../auth";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback,  } from "@/components/ui/avatar";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import {
@@ -21,7 +21,7 @@ export default async function Header() {
           <DropdownMenu>
             <DropdownMenuTrigger>
               <Avatar>
-                <AvatarImage src={session.user.image} alt="@shadcn" />
+                {/* <AvatarImage src={session.user.image} alt="@shadcn" /> */}
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
